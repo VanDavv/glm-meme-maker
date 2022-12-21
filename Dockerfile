@@ -1,3 +1,5 @@
 FROM dkimg/opencv
-VOLUME /golem/input /golem/output
 WORKDIR /golem/work
+ADD task.py .
+ADD test_message.txt .
+VOLUME /golem/input /golem/output
